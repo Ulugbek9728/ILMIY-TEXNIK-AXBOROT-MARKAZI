@@ -1,0 +1,30 @@
+.dayjest__card {
+    border: solid 1px #027B96;
+
+    &--line {
+        height: 2px;
+        width: 70%;
+        background-color: #000;
+        margin: auto;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+}
+
+.dayjest__line {
+    display: block;
+    height: 3px;
+    width: 70%;
+    background-color: #027B96;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.dayjest__aside{
+    background-image: url("../images/Carusel1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 216px;
+}

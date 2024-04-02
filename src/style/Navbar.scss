@@ -1,0 +1,110 @@
+nav {
+    z-index: 349539458934;
+    background-color: #26859D;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    .navbar-brand {
+        height: 100%;
+        img {
+            width: 90px;
+            height: 90px;
+        }
+        p {
+            padding: 0px;
+            flex-wrap: wrap;
+        }
+
+    }
+    .navbar-collapse {
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    transition: 0.5s;
+                    &:hover {
+                        text-shadow: 3px 3px 3px rgba(1, 1, 1, 0.5);
+                    }
+                }
+            }
+        }
+        .end-0{
+            bottom: -30px;
+        }
+    }
+ 
+
+    .search-input{ 
+        position: relative;
+          .input-animation {
+            transition: 0.3s;
+            position: absolute;
+            width: 300px;
+            right:0;
+            bottom: auto;
+            top:3px;
+            z-index: 12;
+           transform: translateY(90deg);
+           .form-control{
+           border-radius: 4px 0 0 4px !important;
+           }
+          }   
+
+          .btn-search{
+            position: absolute;
+            // right: 0;
+            left: 0;
+           top: 3px;
+           &:hover .input-animation{
+            transform: translateY(90deg);
+            display: block;
+           }
+          }
+          .btn-light{
+            border-radius: 0 4px  4px 0 !important;
+          } 
+    }
+    @media (max-width: 768px) {
+    
+        .navbar-brand {
+            img {
+                width: 60px;
+                height: 60px;
+                // margin-top: 10px;
+            }
+            p {
+                //  margin-top: -10px;
+                 font-size: 15px;
+                 margin-bottom: 0;
+            }
+    
+        }
+        .navbar-toggler{
+            margin: 0px;
+            // padding: 10px;
+        }
+        .search-input{
+            position: static;
+            .input-animation{
+                position: static;
+            }
+            .btn-search{
+                position: static;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .navbar-collapse{
+        padding: 20px;
+    }
+    .navbar-brand {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        p {
+             margin-top: -10px;
+        }
+
+    }
+}

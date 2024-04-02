@@ -1,0 +1,122 @@
+.title {
+    background-color: #26859D;
+    margin: 50px auto;
+    padding: 10px 50px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.container-fluid {
+    background-color: #26859D;
+    padding: 0 100px;
+
+    .about-us {
+        padding: 64.5px 20px;
+        background-color: #FFFFFF;
+        box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+        // height: 200px;
+        .row {
+            .col-xl-6 {
+                padding: 0;
+
+                .image-fluid {
+                    height: 590px;
+                    width: 100%;
+                    object-fit: cover;
+                    // padding: 10px;
+                    filter: brightness(46%);
+                }
+            }
+
+            .descrption {
+                padding: 30px;
+
+                .border1 {
+                    padding: 30px;
+                    border-left: 3px solid #26859D;
+
+                    h2 {
+                        font-family: 'Jost';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 46px;
+                        margin: 40px 0;
+
+                    }
+
+                    .text1 {
+                        font-family: 'Judson';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+
+                    .text2 {
+                        font-family: 'Judson';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+
+                    .btn {
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .about-us {
+            box-shadow: 0;
+
+            padding: 64.5px 20px;
+
+            .row {
+                .col-xl-6 {
+                    padding: 0;
+
+                    .image-fluid {
+                        height: 350px;
+                        width: 90%;
+                        object-fit: cover;
+                        filter: brightness(46%);
+                    }
+
+                 
+                }
+                .descrption {
+                    padding: 30px;
+
+                    .border1 {
+                        padding: 0px;
+                        border-left: 0px solid #26859D;
+
+                        h2 {
+                            font-family: 'Jost';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 20px;
+                            margin: 40px 0;
+
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}

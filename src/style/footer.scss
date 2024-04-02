@@ -1,0 +1,28 @@
+footer {
+    padding: 20px;
+    background-color: #26859D;
+    color: #fff;
+    font-weight: 600;
+
+    .foorter-logo {
+        width: 100px;
+    }
+
+    @media (max-width: 768px) {
+        .foorter-logo {
+            width: 80px;
+        }
+        .d-sm-none {
+            display: none;
+        }
+        .list-unstyled {
+            text-align: center;
+            .boglnish {
+                border-top: 1px solid white;
+            }
+            .d-flex{
+                justify-content: center;
+            }
+        }
+    }
+}
