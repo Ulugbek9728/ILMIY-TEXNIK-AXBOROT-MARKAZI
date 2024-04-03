@@ -15,8 +15,8 @@ function Dayjestlar() {
             </div>
             <div className="container-fluid border">
                 <div className="container ">
-                    <div className="row pt-3">
-                        <div className="col-xl-4">
+                    <div className="row py-3 align-items-center justify-content-center">
+                        <div className="col-xl-4 col-md-6">
                             <div className="card">
                                 <img src={cardImg} className="card-img-top" alt="..." />
                                 <div className="card-body">
@@ -28,7 +28,7 @@ function Dayjestlar() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4">
+                        <div className="col-xl-4 col-md-6">
                             <div className="card">
                                 <img src={cardImg} className="card-img-top" alt="..." />
                                 <div className="card-body">
@@ -40,7 +40,7 @@ function Dayjestlar() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4">
+                        <div className="col-xl-4 col-md-6">
                             <div className="card">
                                 <img src={cardImg} className="card-img-top" alt="..." />
                                 <div className="card-body">
@@ -52,9 +52,9 @@ function Dayjestlar() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex justify-content-end">
+                        <div className="d-flex justify-content-end mb-4">
                             <Link to='/dayjest'>
-                                <button className='btn btn-outline-primary px-5 me-3 mb-2'>{getTransitson(language, 'btn')}</button>
+                                <button className='btn px-5 me-3 mb-2'>{getTransitson(language, 'btn')}</button>
                             </Link>
                         </div>
                     </div>

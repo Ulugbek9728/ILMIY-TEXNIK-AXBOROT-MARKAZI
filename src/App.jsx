@@ -12,6 +12,7 @@ import NoPage from './pages/NoPage'
 import Direction from "./pages/Direction";
 import Dayjest from "./pages/Dayjest";
 import Untitled from "./pages/Untitled";
+import AllDirection from "./pages/AllDirection";
 function App() {
   useEffect(()=>{
     AOS.init();
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/direction" element={<Direction/>}/>
+          <Route path="/all_direction" element={<AllDirection/>}/>
           <Route path="/dayjest" element={<Dayjest/>}/>
           <Route path='/untitled' element={<Untitled />}/>
           <Route path="*" element={<NoPage />} />

@@ -11,18 +11,7 @@ import bg from '../../images/Vector 2.png'
 import axios from 'axios';
 import Carusel from './Carusel';
 function HeaderCarusel() {
-    // useEffect(() => {
-    //     axios.get('http://172.16.25.69:8080/news/top3?lang=uz', {
-    //         headers: {
-    //             'Access-Control-Allow-Origin': '*',
-    //             'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-    //         },
-    //     }).then(res => {
-    //         setNews(res.data)
-    //     }).catch(err => { console.log(err) })
-    // }, []);
 
-  
     const caruselArray = [
         {
             img: img1,

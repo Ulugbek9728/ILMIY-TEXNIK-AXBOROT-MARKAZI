@@ -1,11 +1,10 @@
 import React from 'react'
 import '../style/Dayjest.scss'
 import dayjestImg from '../images/odam.png'
-import asideImg from '../images/logo.png'
 
 function Dayjest() {
     return (
-        <div className="container">
+        <div className="container Dayjest">
             <div className="d-flex justify-content-between gap-2 mt-5">
                 <div className="col-9 shadow px-2 py-3">
                     <div className='d-flex gap-3 '>

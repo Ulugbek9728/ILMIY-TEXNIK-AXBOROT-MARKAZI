@@ -11,7 +11,6 @@ function Navbar() {
     // const [language, setLanguage] = useState('uz');
     const dispatch = useDispatch();
     const language = useSelector(state => state.lang.option);
-    console.log(language)
     return (
         <>
             <nav className="navbar navbar-expand-md fixed-top" >
@@ -29,7 +28,7 @@ function Navbar() {
                                 <Link to='/' className="nav-link text-white">{getTransitson(language, 'nav1')}</Link>
                             </li>
                             <li className="nav-item">
-                                <a href='/' className="nav-link text-white">{getTransitson(language, 'nav2')}</a>
+                                <Link to='/all_direction' className="nav-link text-white">{getTransitson(language, 'nav2')}</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to='/dayjest' className="nav-link text-white">{getTransitson(language, 'nav3')}</Link>

@@ -2,7 +2,12 @@ import React from 'react'
 import '../style/footer.scss'
 import { Link } from 'react-router-dom'
 import logo from '../images/лого_ЦНТИ_белый.png'
+import {getTransitson} from "../translate";
+import {useSelector} from "react-redux";
 function Footer() {
+
+  const language = useSelector(state => state.lang.option);
+
   return (
     <footer>
       <div className="container">
@@ -10,7 +15,8 @@ function Footer() {
           <div className="col-xl-7">
             <Link className="d-flex nav-link" to='/'>
               <img className='foorter-logo' src={logo} alt="logo" />
-              <p className='text-white fs-4 my-auto ms-2'> ILMIY-TEXNIK <br /> AXBOROT MARKAZI </p>
+              <p className='text-white fs-4 my-auto ms-2'>{getTransitson(language, 'logo1')} <br />{getTransitson(language, 'logo2')}</p>
+
             </Link>
             <p className='d-sm-none d-lg-block mt-2 '>
               Agar inson ilm nuri bilan o'z yo'lini yoritmasa, zulmat va nodonlik
@@ -24,30 +30,24 @@ function Footer() {
               <div className="col-xl-6">
                 <h3 className='text-center border-bottom pb-3 border-white '>Asosiy</h3>
                 <ul className="list-unstyled ps-xl-5 " >
-                  <li className="nav-item ">
-                    <Link className="nav-link text-white">BOSH SAHIFA</Link>
+                  <li className="nav-item">
+                    <Link to='/' className="nav-link text-white">{getTransitson(language, 'nav1')}</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-white">YO’NALISHLAR</Link>
+                    <Link to='/all_direction' className="nav-link text-white">{getTransitson(language, 'nav2')}</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-white">DAYJESTLAR</Link>
+                    <Link to='/dayjest' className="nav-link text-white">{getTransitson(language, 'nav3')}</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-white">BIZ XAQIMIZDA</Link>
+                    <Link to='/untitled' className="nav-link text-white">{getTransitson(language, 'nav4')}</Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-white">BOG’LANISH</Link>
-                  </li>
-
                 </ul>
               </div>
               <div className="col-xl-6">
-                <ul   className="list-unstyled ps-xl-5 mt-xl-5 mt-xl-4 " >
+                <h3 className='text-center border-bottom pb-3 border-white '>Biz bilan bog'lanish</h3>
+                <ul   className="list-unstyled ps-xl-5" >
                   <li  className="nav-item ">
-                    <Link className="nav-link text-white">
-                    <h6 className='text-center boglnish'>Biz bilan bog'lanish</h6>
-                    </Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link text-white">rivojlanish@gmail.com</Link>

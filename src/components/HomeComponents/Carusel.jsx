@@ -3,8 +3,6 @@ import { useSelector } from 'react-redux';
 import { getTransitson } from '../../translate/index';
 function Carusel(props) {
     const language = useSelector(state => state.lang.option);
-    console.log(language)
-    console.log(getTransitson(language, 'btn'))
     const { itme } = props;
     return (
         <div style={{ backgroundImage: `url(${itme.img})` }} className='item '>
