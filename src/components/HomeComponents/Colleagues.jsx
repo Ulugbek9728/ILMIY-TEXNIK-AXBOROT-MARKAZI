@@ -18,48 +18,51 @@ function Colleagues() {
                 <h2 data-aos="flip-left" className='text-center title '>{getTransitson(language,'xamkor')}</h2>
             </div>
             <div className="container-fluid">
-                <div className='colleagues'>
-                    <OwlCarousel
-                        className='owl-theme'
-                        loop margin={10}
-                        responsive={
-                            {
-                                0: { items: 1 },
-                                600: { items: 2 },
-                                1000: { items: 3 }
-                            }}
-                        dots={false}
-                        autoplay={true}
-                        autoplayTimeout={10000}>
-                        <div className='item w-100'>
-                            <div className="d-flex w-100">
-                                <img className='w-25  h-75 my-3' src={logo1} alt="404" />
-                                <p className='carusel__title'>
-                                    O‘zbekiston Respublikasi milliy huquqiy internet portali
-                                </p>
+                <div className="container">
+                    <div className='colleagues'>
+                        <OwlCarousel
+                            className='owl-theme'
+                            loop margin={10}
+                            responsive={
+                                {
+                                    0: { items: 1 },
+                                    600: { items: 2 },
+                                    1000: { items: 3 }
+                                }}
+                            dots={false}
+                            autoplay={true}
+                            autoplayTimeout={10000}>
+                            <div className='item w-100'>
+                                <div className="d-flex w-100">
+                                    <img className='w-25  h-75 my-3' src={logo1} alt="404" />
+                                    <p className='carusel__title'>
+                                        O‘zbekiston Respublikasi milliy huquqiy internet portali
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className='item w-100'>
-                            <div className="d-flex w-100">
-                                <img className='w-50 image-fluid h-50 mt-4' src={logo2} alt="404" />
-                                <p className='carusel__title'>
-                                    Yagona interaktiv davlat xizmatlari portallari
+                            <div className='item w-100'>
+                                <div className="d-flex w-100">
+                                    <img className='w-50 image-fluid h-50 mt-4' src={logo2} alt="404" />
+                                    <p className='carusel__title'>
+                                        Yagona interaktiv davlat xizmatlari portallari
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className='item w-100'>
-                            <div className="d-flex w-100">
-                                <img className='w-50 image-fluid h-50 mt-4' src={logo3} alt="404" />
-                                <p className='carusel__title'>
-                                    O'zbekiston Respublikasi
-                                    Rivozhlanish agentligi
-                                </p>
+                            <div className='item w-100'>
+                                <div className="d-flex w-100">
+                                    <img className='w-50 image-fluid h-50 mt-4' src={logo3} alt="404" />
+                                    <p className='carusel__title'>
+                                        O'zbekiston Respublikasi
+                                        Rivozhlanish agentligi
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </OwlCarousel>
+                        </OwlCarousel>
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }

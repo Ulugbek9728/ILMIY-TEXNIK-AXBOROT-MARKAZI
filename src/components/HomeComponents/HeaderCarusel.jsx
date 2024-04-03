@@ -54,7 +54,7 @@ function HeaderCarusel() {
                         1000: { items: 1 }
                     }}
                 dots dotsEach
-                autoplay={true}
+                autoplay={false}
                 autoplayTimeout={10000}
             >
 

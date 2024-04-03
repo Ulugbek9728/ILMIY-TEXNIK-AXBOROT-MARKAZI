@@ -16,25 +16,26 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-md fixed-top" >
                 <div className="container">
-                    <Link className="navbar-brand d-flex align-items-center " >
+                    <Link to='/' className="navbar-brand d-flex align-items-center " >
                         <img className='w-75 me-3' src={logo} alt="img" />
-                        <p className='text-white'>{getTransitson(language, 'logo1')} <br />{getTransitson(language, 'logo2')}</p></Link>
+                        <p className='text-white'>{getTransitson(language, 'logo1')} <br />{getTransitson(language, 'logo2')}</p>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"/>
                     </button>
                     <div className="collapse navbar-collapse position-relative" id="navbarNav">
                         <ul className="navbar-nav w-100 gap-lg-3 ">
                             <li className="nav-item">
-                                <Link  className="nav-link text-white" href='home'>{getTransitson(language, 'nav1')}</Link>
+                                <Link to='/' className="nav-link text-white">{getTransitson(language, 'nav1')}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link text-white">{getTransitson(language, 'nav2')}</Link>
+                                <a href='/' className="nav-link text-white">{getTransitson(language, 'nav2')}</a>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link text-white">{getTransitson(language, 'nav3')}</Link>
+                                <Link to='/dayjest' className="nav-link text-white">{getTransitson(language, 'nav3')}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link text-white">{getTransitson(language, 'nav4')}</Link>
+                                <Link to='/untitled' className="nav-link text-white">{getTransitson(language, 'nav4')}</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link text-white">{getTransitson(language, 'nav5')}</Link>

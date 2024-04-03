@@ -11,7 +11,7 @@ function Carusel(props) {
             <div className="item-1 p-4">
                 <h2 className='text-light'>{getTransitson(language, 'news')}</h2>
                 <p className='ps-5'>{itme.dscrption} </p>
-                <div className='d-flex justify-content-end'>
+                <div className='d-flex justify-content-start'>
                     <span className='px-5'>{itme.date}</span>
                 </div>
                 <div className="d-flex justify-content-center ">

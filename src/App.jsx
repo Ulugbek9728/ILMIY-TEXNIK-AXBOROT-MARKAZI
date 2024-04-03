@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import '../node_modules/bootstrap/dist/js/bootstrap'
+// import '../node_modules/bootstrap/dist/js/bootstrap'
 import '../node_modules/boxicons/dist/boxicons'
 import '../node_modules/boxicons/css/boxicons.min.css'
 import 'aos/dist/aos.css';
@@ -15,7 +15,7 @@ import Untitled from "./pages/Untitled";
 function App() {
   useEffect(()=>{
     AOS.init();
-})
+});
   return (
     <BrowserRouter>
       <Routes>

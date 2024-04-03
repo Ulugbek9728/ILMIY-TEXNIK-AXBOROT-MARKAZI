@@ -9,7 +9,7 @@ import 'owl.carousel/dist/owl.carousel'
 function Direction() {
     const arr = [1, 2, 3, 4, 5, 6, 7];
     return (
-        <div className='drection'>
+        <div className='drection' id='drection'>
             <img src={backImg} alt="background image" className='main__img w-100 h-100 contain' />
             <div className="container">
                 <div className="d-flex justify-content-center gap-3 mt-5">

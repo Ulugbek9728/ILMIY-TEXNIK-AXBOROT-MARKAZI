@@ -1,6 +1,7 @@
 import React from 'react'
 import '../style/Untitled.scss'
-import backImg from '../images/gerb 1.png'
+import backImg from '../images/Rectangle 4.png'
+
 // import backImg from '../images/back-img.jpg'
 import businessman from '../images/adliya-logo 1.png'
 
