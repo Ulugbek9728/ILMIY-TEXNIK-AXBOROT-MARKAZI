@@ -1,14 +1,15 @@
 import React from 'react'
 import '../../style/HomeComponents/HomeNatija.scss'
 import bg from '../../images/Carusel1.jpg'
-import { useSelector } from 'react-redux';
-import { getTransitson } from '../../translate';
+import { useTranslation } from "react-i18next";
+
+
 function Natijalar() {
-    const language = useSelector(state => state.lang.option);
+    const { t } = useTranslation();
     return (
         <div data-aos="zoom-in-down">
             <div className="d-flex justify-content-center" >
-                <h2 data-aos="flip-left" className='text-center title '>{getTransitson(language,'results')}</h2>
+                <h2 data-aos="flip-left" className='text-center title '>{t("Home.results")}</h2>
             </div>
 
             <div className='container'>
@@ -24,7 +25,7 @@ function Natijalar() {
                                 <h1 className='text-light mb-2'>O'zbekistonda sun'iy qor va yomg'ir
                                     yog'diriladi</h1>
                                 <div className="d-flex justify-content-end">
-                                    <button className='btn btn-outline-light px-5'>{getTransitson(language,'btn')}</button>
+                                    <button className='btn btn-outline-light px-5'>{t("Home.btn")}</button>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +43,7 @@ function Natijalar() {
                                         <h5 className='text-light mb-2'>O'zbekistonda sun'iy qor va yomg'ir
                                             yog'diriladi</h5>
                                         <div className="d-flex justify-content-end">
-                                            <button className='btn btn-outline-light px-5'>{getTransitson(language,'btn')}</button>
+                                            <button className='btn btn-outline-light px-5'>{t("Home.btn")}</button>
                                         </div>
                                     </div>
                                 </div>
@@ -58,7 +59,7 @@ function Natijalar() {
                                         <h5 className='text-light mb-2'>O'zbekistonda sun'iy qor va yomg'ir
                                             yog'diriladi</h5>
                                         <div className="d-flex justify-content-end">
-                                            <button className='btn btn-outline-light px-5'>{getTransitson(language,'btn')}</button>
+                                            <button className='btn btn-outline-light px-5'>{t("Home.btn")}</button>
                                         </div>
                                     </div>
                                 </div>

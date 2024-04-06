@@ -2,11 +2,13 @@ import React from 'react'
 import '../style/footer.scss'
 import { Link } from 'react-router-dom'
 import logo from '../images/лого_ЦНТИ_белый.png'
-import {getTransitson} from "../translate";
-import {useSelector} from "react-redux";
+import { useTranslation } from "react-i18next";
+
+
+
 function Footer() {
 
-  const language = useSelector(state => state.lang.option);
+  const { t } = useTranslation();
 
   return (
     <footer>
@@ -15,7 +17,7 @@ function Footer() {
           <div className="col-xl-7">
             <Link className="d-flex nav-link" to='/'>
               <img className='foorter-logo' src={logo} alt="logo" />
-              <p className='text-white fs-4 my-auto ms-2'>{getTransitson(language, 'logo1')} <br />{getTransitson(language, 'logo2')}</p>
+              <p className='text-white fs-4 my-auto ms-2'>{t("Home.logo1")} <br />{t("Home.logo2")}</p>
 
             </Link>
             <p className='d-sm-none d-lg-block mt-2 '>
@@ -31,16 +33,16 @@ function Footer() {
                 <h3 className='text-center border-bottom pb-3 border-white '>Asosiy</h3>
                 <ul className="list-unstyled ps-xl-5 " >
                   <li className="nav-item">
-                    <Link to='/' className="nav-link text-white">{getTransitson(language, 'nav1')}</Link>
+                    <Link to='/' className="nav-link text-white">{t("Home.nav1")}</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/all_direction' className="nav-link text-white">{getTransitson(language, 'nav2')}</Link>
+                    <Link to='/all_direction' className="nav-link text-white">{t("Home.nav2")}</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/dayjest' className="nav-link text-white">{getTransitson(language, 'nav3')}</Link>
+                    <Link to='/dayjest' className="nav-link text-white">{t("Home.nav3")}</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/untitled' className="nav-link text-white">{getTransitson(language, 'nav4')}</Link>
+                    <Link to='/untitled' className="nav-link text-white">{t("Home.aboutUs")}</Link>
                   </li>
                 </ul>
               </div>

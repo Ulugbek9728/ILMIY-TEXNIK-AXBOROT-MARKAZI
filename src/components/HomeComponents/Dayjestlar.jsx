@@ -1,17 +1,17 @@
 import React from 'react'
 import '../../style/HomeComponents/HomeDayjest.scss'
 import cardImg from '../../images/Rectangle 30.png'
-import { useSelector } from 'react-redux';
-import { getTransitson } from '../../translate';
+import { useTranslation } from "react-i18next";
+
 import { Link } from 'react-router-dom'
 
 
 function Dayjestlar() {
-    const language = useSelector(state => state.lang.option);
+    const { t } = useTranslation();
     return (
         <div data-aos="zoom-in-down">
             <div className="d-flex justify-content-center" >
-                <h2 data-aos="flip-left" className='text-center title '>{getTransitson(language, 'dayjest')}</h2>
+                <h2 data-aos="flip-left" className='text-center title '>{t("Home.dayjest")}</h2>
             </div>
             <div className="container-fluid border">
                 <div className="container ">
@@ -54,7 +54,7 @@ function Dayjestlar() {
                         </div>
                         <div className="d-flex justify-content-end mb-4">
                             <Link to='/dayjest'>
-                                <button className='btn px-5 me-3 mb-2'>{getTransitson(language, 'btn')}</button>
+                                <button className='btn px-5 me-3 mb-2'>{t("Home.btn")}</button>
                             </Link>
                         </div>
                     </div>

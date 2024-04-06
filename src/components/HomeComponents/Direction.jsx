@@ -5,22 +5,24 @@ import logo2 from '../../images/Vector 4.png'
 import logo3 from '../../images/File_dock_search_fill@2x.png'
 import logo4 from '../../images/trending-up.png'
 import logo5 from '../../images/users.png'
-import {useSelector} from 'react-redux'
-import {getTransitson} from '../../translate'
+import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom'
 
-// import { useEffect } from 'react'
+
+
+
 function Direction() {
-    const language = useSelector(state => state.lang.option);
-    console.log(language)
-    console.log(getTransitson(language, 'btn'))
+    const { t } = useTranslation();
+
     return (
         <div data-aos="zoom-in-down">
             <div className="d-flex justify-content-center">
-                <h2 data-aos="flip-left" className='text-center title '>{getTransitson(language, 'direction')}</h2>
+                <h2 data-aos="flip-left" className='text-center title '>{t("Home.direction")}</h2>
             </div>
             <div className='container cards'>
                 <div className="row align-items-center justify-content-center">
-                    <div className='cardBox col-lg-4 col-md-6'>
+
+                    <Link to="/direction" className='cardBox col-lg-4 col-md-6'>
                         <div className="card">
                             <div className='d-flex justify-content-center'>
                                 <img className='w-25 p-2' src={logo1} alt="404"/>
@@ -33,7 +35,7 @@ function Direction() {
                                 fermer xoʻjaligidagi sigirlardan olingan...
                             </p>
                         </div>
-                    </div>
+                    </Link>
                     <div className='cardBox col-lg-4 col-md-6'>
                         <div className="card">
                             <div className='d-flex justify-content-center'>

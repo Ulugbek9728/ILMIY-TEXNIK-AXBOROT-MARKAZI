@@ -7,15 +7,16 @@ import 'owl.carousel/dist/owl.carousel'
 import logo1 from '../../images/adliya-logo 1.png'
 import logo2 from '../../images/partner_1 1.png'
 import logo3 from '../../images/gerb 1.png'
-import { useSelector } from 'react-redux'
-import { getTransitson } from '../../translate/index'
+import { useTranslation } from "react-i18next";
+
+
 function Colleagues() {
-    const language = useSelector(state => state.lang.option);
+    const { t } = useTranslation();
 
     return (
         <div data-aos="zoom-in-down">
             <div className="d-flex justify-content-center" >
-                <h2 data-aos="flip-left" className='text-center title '>{getTransitson(language,'xamkor')}</h2>
+                <h2 data-aos="flip-left" className='text-center title '>{t("Home.Xamkorlar")}</h2>
             </div>
             <div className="container-fluid">
                 <div className="container">

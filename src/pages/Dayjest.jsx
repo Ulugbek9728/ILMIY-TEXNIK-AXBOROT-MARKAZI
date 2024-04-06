@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../style/Dayjest.scss'
 import dayjestImg from '../images/odam.png'
 
 function Dayjest() {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, []);
     return (
         <div className="container Dayjest">
             <div className="d-flex justify-content-between gap-2 mt-5">

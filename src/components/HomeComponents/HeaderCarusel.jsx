@@ -8,7 +8,6 @@ import img1 from '../../images/logo.png'
 import img2 from '../../images/carusel2.jpg'
 import img3 from '../../images/carusel3.jpg'
 import bg from '../../images/Vector 2.png'
-import axios from 'axios';
 import Carusel from './Carusel';
 function HeaderCarusel() {
 

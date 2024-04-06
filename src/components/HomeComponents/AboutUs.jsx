@@ -1,17 +1,16 @@
 import React from 'react'
 import '../../style/HomeComponents/HomeAboutUs.scss'
 import image from '../../images/Rectangle 4.png'
-import { useSelector } from 'react-redux';
-import { getTransitson } from '../../translate';
+import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom'
 
 
 function AboutUs() {
-    const language = useSelector(state => state.lang.option);
+    const { t } = useTranslation();
     return (
         <div data-aos="zoom-in-down">
             <div className="d-flex justify-content-center" >
-                <h2 data-aos="flip-left" className='text-center title '>{getTransitson(language,'aboutUs')}</h2>
+                <h2 data-aos="flip-left" className='text-center title '>{t("Home.aboutUs")}</h2>
             </div>
             <div className="container-fluid">
                 <div className="container">
@@ -23,7 +22,7 @@ function AboutUs() {
                             <div className='col-xl-6 descrption'>
                                 <div className='border1'>
                                     <h2>
-                                        {getTransitson(language,'aboutUs_title')}
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quis.
                                     </h2>
                                     <p className='text1'>
                                         Agar inson ilm nuri bilan o'z yo'lini yoritmasa, zulmat va nodonlik
@@ -39,7 +38,7 @@ function AboutUs() {
                                     </p>
                                     <div className='d-flex justify-content-end'>
                                         <Link to='/untitled'>
-                                            <button className='btn btn-outline-primary px-5'>{getTransitson(language, 'btn')}</button>
+                                            <button className='btn btn-outline-primary px-5'>{t("Home.btn")}</button>
                                         </Link>
                                     </div>
                                 </div>
