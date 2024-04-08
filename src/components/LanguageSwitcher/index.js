@@ -15,7 +15,7 @@ const LanguageSwitcher = () => {
 
   const changeLang = (lng) => {
     i18n.changeLanguage(lng);
-    window.location.reload();
+    // window.location.reload();
   };
   useEffect(() => {
     if (langDropDown) {
@@ -29,6 +29,7 @@ const LanguageSwitcher = () => {
     }
   }, [langDropDown, showAndHidden]);
 
+  console.log(lang)
   return (
     <LanguageSwitcherStyle
       onClick={showAndHidden}

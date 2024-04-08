@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { SearchOutlined, CloseOutlined } from '@ant-design/icons'
 import logo from '../images/лого_ЦНТИ_белый.png'
 import '../style/Navbar.scss'
+
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher/index.js";
 
