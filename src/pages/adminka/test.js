@@ -1,11 +1,21 @@
 import React, {useRef, useState} from 'react';
 import { Editor } from '@tinymce/tinymce-react';
-
+import {useQuery} from "react-query";
+import axios from "axios";
 
 
 function Test(props) {
     const editorRef = useRef(null);
     const [content, setContent] = useState('')
+
+    const {isError, error, isLoading, data} = useQuery("todos", ()=>{
+       return  axios.get(`https://api-ttj.tdtu.uz/public/main`, '',).then((response) => {
+            console.log(response.data);
+
+        }).catch((error) => {
+            console.log(error.response)
+        });})
+
     const log = () => {
         if (editorRef.current) {
             console.log(editorRef.current.getContent());
