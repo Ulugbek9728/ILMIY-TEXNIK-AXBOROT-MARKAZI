@@ -28,14 +28,17 @@ function App() {
         <QueryClientProvider client={client}>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route index element={<Test />} />
-                    {/*<Route path="/direction" element={<Direction/>}/>*/}
-                    {/*<Route path="/news" element={<News/>}/>*/}
-                    {/*<Route path="/nuwsOne" element={<NewsOne/>}/>*/}
-                    {/*<Route path="/all_direction" element={<AllDirection/>}/>*/}
-                    {/*<Route path="/dayjest" element={<Dayjest/>}/>*/}
-                    {/*<Route path='/untitled' element={<Untitled />}/>*/}
-                    {/*<Route path="*" element={<NoPage />} />*/}
+                    <Route index element={<Home />} />
+
+                    <Route path="/test" element={<Test/>}/>
+
+                    <Route path="/direction" element={<Direction/>}/>
+                    <Route path="/news" element={<News/>}/>
+                    <Route path="/nuwsOne" element={<NewsOne/>}/>
+                    <Route path="/all_direction" element={<AllDirection/>}/>
+                    <Route path="/dayjest" element={<Dayjest/>}/>
+                    <Route path='/untitled' element={<Untitled />}/>
+                    <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>
         </QueryClientProvider>
