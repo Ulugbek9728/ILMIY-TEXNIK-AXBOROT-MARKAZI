@@ -16,6 +16,7 @@ import AllDirection from "./pages/AllDirection";
 import News from "./pages/news";
 import NewsOne from "./components/news/NewsOne";
 import Test from "./pages/adminka/test";
+import Results from "./pages/results";
 function App() {
   useEffect(()=>{
     AOS.init();
@@ -34,6 +35,7 @@ function App() {
 
                     <Route path="/direction" element={<Direction/>}/>
                     <Route path="/news" element={<News/>}/>
+                    <Route path="/results" element={<Results/>}/>
                     <Route path="/nuwsOne" element={<NewsOne/>}/>
                     <Route path="/all_direction" element={<AllDirection/>}/>
                     <Route path="/dayjest" element={<Dayjest/>}/>

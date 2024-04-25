@@ -15,8 +15,9 @@ function Untitled() {
 
     return (
         <>
-            <img src={backImg} alt="background image" className='main__img w-100 contain'/>
+
             <div className='container'>
+                <img src={backImg} alt="background image" className='main__img w-100 contain'/>
                 <div>
                     <h2 className='mt-5 d-flex justify-content-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, explicabo.</h2>
                     <p className='mt-5' style={{textAlign:"justify"}}>

@@ -16,8 +16,9 @@ function Direction() {
     }, []);
     return (
         <div className='drection' id='drection'>
-            <img src={backImg} alt="background image" className='main__img w-100 h-100 contain' />
-            <div className="container">
+
+            <div className="container ">
+                <img src={backImg} alt="background image" className='main__img contain' />
                 <div className="d-flex justify-content-center gap-3 mt-5">
                     <h2 className='d-flex flex-column justify-content-center border-end border-solid border-dark items-center px-3'>Yo’nalish nomi</h2>
                     <p className='w-50'>

@@ -9,7 +9,7 @@ function Natijalar() {
     return (
         <div data-aos="zoom-in-down">
             <div className="d-flex justify-content-center" >
-                <h2 data-aos="flip-left" className='text-center title '>{t("Home.results")}</h2>
+                <h2 data-aos="flip-left" className='text-center title '>{t("Home.nav4")}</h2>
             </div>
 
             <div className='container'>

@@ -36,10 +36,10 @@ function Navbar() {
                                 <Link to='/dayjest' className="nav-link text-white">{t("Home.nav3")}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/untitled' className="nav-link text-white">{t("Home.aboutUs")}</Link>
+                                <Link to='/results' className="nav-link text-white">{t("Home.nav4")}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link text-white">{t("Home.nav5")}</Link>
+                                <Link to='/untitled' className="nav-link text-white">{t("Home.aboutUs")}</Link>
                             </li>
                             <li className='nav-item'>
                                 <LanguageSwitcher />

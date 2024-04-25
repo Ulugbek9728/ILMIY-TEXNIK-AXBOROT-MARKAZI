@@ -33,7 +33,7 @@ function HeaderCarusel() {
     return (
         <div id='home' className='position-relative '>
             <OwlCarousel
-                className='owl-theme  '
+                className='owl-theme'
                 loop margin={10}
                 responsive={
                     {

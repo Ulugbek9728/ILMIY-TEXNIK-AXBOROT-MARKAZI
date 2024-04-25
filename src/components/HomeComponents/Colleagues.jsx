@@ -32,7 +32,7 @@ function Colleagues() {
                                 }}
                             dots={false}
                             autoplay={true}
-                            autoplayTimeout={10000}>
+                            autoplayTimeout={3000}>
                             <div className='item w-100'>
                                 <div className="d-flex w-100">
                                     <img className='w-25  h-75 my-3' src={logo1} alt="404" />

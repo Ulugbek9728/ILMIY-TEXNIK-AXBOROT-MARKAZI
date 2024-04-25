@@ -11,7 +11,7 @@ function Dayjestlar() {
     return (
         <div data-aos="zoom-in-down">
             <div className="d-flex justify-content-center" >
-                <h2 data-aos="flip-left" className='text-center title '>{t("Home.dayjest")}</h2>
+                <h2 data-aos="flip-left" className='text-center title '>{t("Home.nav3")}</h2>
             </div>
             <div className="container-fluid border">
                 <div className="container ">
