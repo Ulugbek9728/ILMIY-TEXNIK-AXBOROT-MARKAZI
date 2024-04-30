@@ -22,6 +22,7 @@ function Test(props) {
             setContent(editorRef.current.getContent())
         }
     };
+
     return (
         <div className='container' style={{marginTop:"200px", minHeight:'60vh'}}>
             <div dangerouslySetInnerHTML={{__html:content}}>

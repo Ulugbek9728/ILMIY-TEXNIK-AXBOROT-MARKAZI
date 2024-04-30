@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import '../style/Untitled.scss'
-import backImg from '../images/Rectangle 4.png'
+import backImg from '../images/Rectangle 4.jpg'
 
 // import backImg from '../images/back-img.jpg'
 import businessman from '../images/adliya-logo 1.png'

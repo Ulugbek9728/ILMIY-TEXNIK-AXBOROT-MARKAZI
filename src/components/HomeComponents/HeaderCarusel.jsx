@@ -9,7 +9,18 @@ import img2 from '../../images/carusel2.jpg'
 import img3 from '../../images/carusel3.jpg'
 import bg from '../../images/Vector 2.png'
 import Carusel from './Carusel';
+import { getHomeNews } from "../../api/general";
+import { useQuery } from "react-query";
+import {useTranslation} from "react-i18next";
+
+
+
+
 function HeaderCarusel() {
+    const { data } = useQuery("news-home", getHomeNews);
+    const { t } = useTranslation();
+
+    console.log(data)
 
     const caruselArray = [
         {

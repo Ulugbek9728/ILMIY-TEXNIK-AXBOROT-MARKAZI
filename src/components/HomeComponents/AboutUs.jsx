@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../style/HomeComponents/HomeAboutUs.scss'
-import image from '../../images/Rectangle 4.png'
+import image from '../../images/Rectangle 4.jpg'
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom'
 
